@@ -1,0 +1,27 @@
+let a = 100;
+let b = 200;
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
+console.log(a ** 2);
+
+console.log(a > b);
+console.log(a < b);
+console.log(a/0);
+compare = (a > b) ? "a is greater" : "b is greater";
+console.log(compare);
+console.log("skdha"/a);
+let string = a+b+"Hello";
+console.log(string);
+string = "Hello" + a + b;
+console.log(string);
+string = "5" + 5;
+console.log(string);
+string = 5 + "5";
+console.log(string);
+string = "5" - 5;
+console.log(string);
+string = 5 - "5";
+console.log(string);
