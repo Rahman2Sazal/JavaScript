@@ -46,15 +46,23 @@ let obj3 = {
     age: 28,
 }
 arr1.push(obj1) // adds obj1 as a single element at the end of arr1
-console.log(arr1) // ["First Element", "Second Element", "Mahfuz", "$$", [1, 2, 3, 4, 5], {name: "Mahfuz", age: 25}]
+/*console.log(arr1) // ["First Element", "Second Element", "Mahfuz", "$$", [1, 2, 3, 4, 5], {name: "Mahfuz", age: 25}]
 console.log(arr1[arr1.length-1]) // {name: "Mahfuz", age: 25}
 console.log(arr1[arr1.length-1].name) // Mahfuz
 
 arr1.push(obj2, obj3) // adds obj2 and obj3 as single elements at the end of arr1
-console.log(arr1) // ["First Element", "Second Element", "Mahfuz", "$$", [1, 2, 3, 4, 5], {name: "Mahfuz", age: 25}, {name: "John", age: 30}, {name: "Jane", age: 28}]
+/*console.log(arr1) // ["First Element", "Second Element", "Mahfuz", "$$", [1, 2, 3, 4, 5], {name: "Mahfuz", age: 25}, {name: "John", age: 30}, {name: "Jane", age: 28}]
 console.log(arr1.length) // 8
 console.log(arr1[arr1.length-3]) // shows {name: "Mahfuz", age: 25} because it is the third last element in the array
-console.log(arr1[arr1.length-1]) // {name: "Jane", age: 28}
+console.log(arr1[arr1.length-1]) // {name: "Jane", age: 28} because it is the last element in the array
 console.log(arr1[arr1.length-1].name, arr1[arr1.length-1].age) // Jane 28
-console.log(arr1[arr1.length-2]) // {name: "John", age: 30}
-console.log(arr1[arr1.length-2].name, arr1[arr1.length-2].age) // John 30
+console.log(arr1[arr1.length-2]) // {name: "John", age: 30} because it is the because it is object and we are accessing the name and age properties of the object
+console.log(arr1[arr1.length-2].name, arr1[arr1.length-2].age) // shows John 30 because it is object and we are accessing the name and age properties of the object
+
+*/
+
+for (let i = 0; i < arr1.length; i++) {
+    if (typeof arr1[i] === "object" && !Array.isArray(arr1[i])) {
+        console.log(arr1[i].name, arr1[i].age) // shows the name and age properties of the object
+    }   
+}
