@@ -1,4 +1,4 @@
-https://github.com/Rahman2Sazal/JavaScript-practicelet name= "John";
+
 let age= 30;
 let isStudent= true;
 let hobbies= ["reading", "traveling", "coding"];
@@ -28,3 +28,4 @@ console.log("Type of x:", typeof x)
 x = { name: "John", age: 30 }
 console.log("Value of x:", x)
 console.log("Type of x:", typeof x)
+
